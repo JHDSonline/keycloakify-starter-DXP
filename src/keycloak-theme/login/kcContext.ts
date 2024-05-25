@@ -9,6 +9,7 @@ export type KcContextExtension =
 	// keycloak-mail-whitelisting define the non standard ftl global authorizedMailDomains, we declare it here.
 	| { pageId: "register.ftl"; authorizedMailDomains: string[]; };
 
+
 //NOTE: In most of the cases you do not need to overload the KcContext, you can 
 // just call createGetKcContext(...) without type arguments.  
 // You want to overload the KcContext only if:  
@@ -20,12 +21,12 @@ export const { getKcContext } = createGetKcContext<KcContextExtension>({
 			pageId: "login.ftl",
 			locale: {
 				//When we test the login page we do it in french
-				currentLanguageTag: "fr",
+				currentLanguageTag: "en",
 			},
 			//Uncomment the following line for hiding the Alert message
-			//"message": undefined
+			// "message": undefined,
 			//Uncomment the following line for showing an Error message
-			//message: { type: "error", summary: "This is an error" }
+			// message: { type: "error", summary: "This is an error" }
 		},
 		{
 			pageId: "my-extra-page-2.ftl",
@@ -35,7 +36,7 @@ export const { getKcContext } = createGetKcContext<KcContextExtension>({
 			//NOTE: You will either use register.ftl (legacy) or register-user-profile.ftl, not both
 			pageId: "register-user-profile.ftl",
 			locale: {
-				currentLanguageTag: "fr"
+				currentLanguageTag: "en"
 			},
 			profile: {
 				attributes: [
@@ -97,7 +98,7 @@ export const { getKcContext } = createGetKcContext<KcContextExtension>({
 
 export const { kcContext } = getKcContext({
 	// Uncomment to test the login page for development.
-	//mockPageId: "login.ftl",
+	// mockPageId: "login.ftl",
 });
 
 

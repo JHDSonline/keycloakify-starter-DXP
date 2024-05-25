@@ -1,16 +1,87 @@
-
+a{
+    color:#0066cc;
+    font-weight: bold;
+}
 .my-color {
-	color: red;
+	color: #0066CC;
 }
 
 .my-font {
 	font-family: 'Work Sans';
 }
+/*.my-logo{*/
+/*    margin-bottom: 1.5rem!important;*/
+/*}*/
 
 .my-root-class {
 	background: white;
 }
 
 .my-root-class body {
-	background: url(./assets/background.svg) no-repeat center center fixed;
+	background: url(./assets/dxp-core-login-bg.svg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.form-control:hover {
+    border-color: #007efc;
+}
+.form-control:focus {
+    border-color: #3399ff;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 4px rgb(0, 126, 252);
+}
+.kcHeaderWrapperClass {
+	padding: 0px 0px 12px 0px!important;
+	text-align: left;
+    width: 50%;
+}
+.card-pf {
+    background: white;
+    margin: 64px auto 0px auto;
+    margin-bottom: 32px!important;
+    max-width: 500px;
+    border-top: 0;
+    border-radius: 1rem;
+    padding: 32px!important;
+    /* Box Shadow/dxp-shadow-md */
+    /*box-shadow: 0px 91px 129px 0px rgba(0, 0, 0, 0.00), 0px 28.949px 26.943px 0px rgba(0, 0, 0, 0.01), 0px 12.034px 10.208px 0px rgba(0, 0, 0, 0.04), 0px 0.5px 3px -2px rgba(0, 0, 0, 0.85), 0px 0.25px 0.5px 0px rgba(0, 0, 0, 0.13), 0px 2.75px 3.415px 0px rgba(0, 0, 0, 0.08);*/
+    box-shadow: 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 11px 15px -7px rgba(0, 0, 0, 0.20);
+}
+h1{
+    font-weight: bold;
+    text-align: left!important;
+}
+.kcInputClass {
+    /*width: 100%;*/
+    font-size: 16px!important;
+    height: 56px!important;
+    padding: 1rem !important;
+    border: 1.5px solid rgba(0, 0, 0, 0.23);
+    border-radius: 1rem;
+    position: relative;
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.3s all;
+    /*margin-bottom: 32px!important;*/
+}
+
+.kcInputClass:hover {
+     background-color: rgba(255, 255, 255, 0.45);
+     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+ }
+
+.btn-primary {
+    font-size: 16px!important;
+    height: 56px!important;
+    padding: 1rem !important;
+    border-radius: 1rem;
+    background: #001932;
+    border: 1rem!important;
+}
+.btn-primary:hover{
+    background: #0066cc;
+
+}
+.kcLabelClass{
+    font-size: 16px!important;
+    font-weight: bold;
 }

@@ -38,7 +38,7 @@ export const WithEmailAsUsername: Story = {
 };
 
 export const WithPresetUsername: Story = {
-    render: () => <PageStory kcContext={{ login: { username: "max.mustermann@mail.com" } }} />,
+    render: () => <PageStory kcContext={{ login: { username: "john.doe@mail.com" } }} />,
 };
 
 export const WithImmutablePresetUsername: Story = {
@@ -46,7 +46,7 @@ export const WithImmutablePresetUsername: Story = {
         <PageStory
             kcContext={{
                 auth: {
-                    attemptedUsername: "max.mustermann@mail.com",
+                    attemptedUsername: "john.doe@mail.com",
                     showUsername: true,
                 },
                 usernameHidden: true,
